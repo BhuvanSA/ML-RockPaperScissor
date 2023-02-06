@@ -2,7 +2,7 @@ import cv2
 
 path = "./rps/paper/"
 
-for i in range(1,2):
+for i in range(1,501):
     frame = cv2.imread(path + str(i) + ".jpeg")
 
     cv2.imwrite((path + str(i) + "-90.jpeg"), cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE))
